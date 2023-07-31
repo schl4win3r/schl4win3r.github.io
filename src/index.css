@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+ * fonts
+ */
+@font-face {
+  font-family: "RedHatText";
+  src: url("./font/RedHatTextVF.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "RedHatText";
+  src: url("./font/RedHatTextVF-Italic.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "MoonDance";
+  src: url("./font/MoonDance-Regular.ttf") format("truetype");
+}
+
+/**
+ * base layer
+ */
+@layer base {
+  html {
+    @apply font-sans;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+
+  .font-moon {
+    font-family: "MoonDance", cursive;
+  }
+}
+
+/*
+ * utilities Layer
+ */
+@layer utilities {
+  .dbg-1 {
+    @apply border-4 border-amber-700;
+  }
+
+  .dbg-2 {
+    @apply border-4 border-green-700;
+  }
+
+  .dbg-3 {
+    @apply border-4 border-pink-600;
+  }
+}
