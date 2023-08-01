@@ -22,8 +22,11 @@
 }
 
 @font-face {
-  font-family: "MoonDance";
-  src: url("./font/MoonDance-Regular.ttf") format("truetype");
+  font-family: "Caveat";
+  src: url("./font/Caveat-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: fallback;
 }
 
 /**
@@ -38,8 +41,8 @@
     @apply underline;
   }
 
-  .font-moon {
-    font-family: "MoonDance", cursive;
+  .font-caveat {
+    font-family: "Caveat", cursive;
   }
 }
 
